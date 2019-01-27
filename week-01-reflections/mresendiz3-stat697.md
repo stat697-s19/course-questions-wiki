@@ -1,11 +1,39 @@
 
 # Questions about Problems and Recipes
 
+[Course Structure Quiz, Problem 1]
+* Question (mresendiz-stat697): Is there a reason why SAS shows the output window at the start of the program? If the output window opening at the start of the program is a "vestigial" part of SAS shouldn't SAS be rewritten with a version that does not open with the window?
 
+[Course Structure Quiz, Problem 2]
+* Question (mresendiz-stat697): Can students pick their own teams for projects? Is there some interface where students can digitally "meet" everyone all at once via webcam?
 
-[place your questions/answers here, and delete this line]
+[Course Structure Quiz, Problem 3]
+* Question (mresendiz-stat697): Is there some evidence where vertical panes are more productive than horizontal? Would that be a good type of project to take on as a student? What are the most impressive projects that this online course has seen and why?
 
+[Course Structure Quiz, Problem 4]
+* Question (mresendiz-stat697): If Python and R can do most of what SAS does (referencing the W1 Recipe video)  why do businesses use SAS that costs lots of money? Is SAS specially certified? If so, who audits SAS? 
 
+[Course Structure Quiz, Problem 5]
+* Question (mresendiz-stat697): The only industry I know that uses SAS is the medical industry. Are there other industries that still use SAS as their primary analysis tool? 
+* Answer (mresendiz-stat697): There are other industries that are increasingly using SAS including the automotive, banking, communications, and education to name a few. This was take from the SAS website so I would personally be skeptical of the industries SAS claims to serve which makes me question again: Who is auditing SAS?
+
+[Course Structure Quiz, Problem 6]
+* Question (mresendiz-stat697): How often do students that require accomodations use their accomodations for this class? Does the instructor put limits on what can and cannot warrant extra time?
+
+[Course Structure Quiz, Problem 7]
+* Question (mresendiz-stat697): Objectively, how does the CSUEB Data Science Program compare to the program at UC Berkeley? Asking for a friend. 
+
+[Course Structure Quiz, Problem 8]
+* Question (mresendiz-stat697): Is the number "0" in the fizz-buzz activity a binary true or false symbol? 
+* Answer (mresendiz-stat697): Yes. The mod function evaluates to zero if it is divisible by 3 or 5, respectively and evalues to 1 otherwise. 
+
+[hello-world Week 1 SAS Recipe]
+* Question (mresendiz-stat697): Does the PUT statement output just text on SAS?
+* Answer (mresendiz-stat697): The put statement outputs just character strings. Additionally, by default each PUT statement begins on a new line but we can add a "trailing" PUT statement with the addition of an @ symbol. This information was taken from the SAS support website. 
+
+[fizz-buzz Week 1 SAS Recipe]
+* Question (mresendiz-stat697): Does it matter where I update the message that outputs my first and last name? More specifically, can it be an "else-if" statement before determining the multiples of 3 and 5?
+* Answer (mresendiz-stat697): I found that I can have the same message output whether I place the update before or after the iterations of 3 and 5 multiples. 
 
 ***
 
@@ -18,7 +46,25 @@
 ```
 
 
-[place your recipes exploration here, and delete this line]
+*------------------------------------;
+* Recipe: hello-world;
+*------------------------------------;
+
+* original recipe;
+data _null_ ;
+	put "Hello, World!";
+run;
+*------------------------------------;
+* Recipe: fizz-buzz ;
+*------------------------------------;
+* original recipe;
+data _null_;
+    do i = 1 to 100;
+        if mod(i,3) = 0 then put 'Fizz';
+        else if mod(i, 5) = 0 then put 'Buzz';
+        else put i=;
+    end;
+run;
 
 
 
