@@ -49,7 +49,32 @@
 ```
 
 
-[place your recipes exploration here, and delete this line]
+* Recipe: hello-world ;
+
+* original recipe;
+data _null_;
+    put 'Hello, World!';
+run;
+
+* modified to print the content of a macro variable;
+%let Myname = Jingyi Duan;
+data _null_;
+    put "Hello, &Myname.!";
+run;
+
+
+
+* Recipe: fizz-buzz ;
+
+* original recipe;
+data _null_;
+    do i = 1 to 100;
+        if mod(i,3) = 0 then put 'Fizz';
+        else if mod(i, 5) = 0 then put 'Buzz';
+        else put i=;
+    end;
+run;
+
 
 
 
