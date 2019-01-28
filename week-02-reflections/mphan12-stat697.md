@@ -85,7 +85,70 @@ together with an equal sign (=), which causes the name of the macro variable to 
 ```
 
 
-[place your recipes exploration here, and delete this line]
+
+*******************************************************************************;
+**************** 80-character banner for column width reference ***************;
+* set window width to banner width to calibrate line length to 80 characters  *;
+*******************************************************************************;
+
+*******************************************************************************;
+* summarize-data-using-sql ;
+*******************************************************************************;
+* print the first 3 rows from sashelp.iris;
+proc sql outobs=3;
+    select
+        *
+    from
+        sashelp.iris
+    ;
+quit;
+
+* print the first 5 rows of sashelp.iris after sorting by SepalLength;
+proc sql outobs=5 number;
+    select
+        *
+    from
+        sashelp.iris
+    order by
+        SepalLength
+    ;
+quit;
+
+* summarize values for qualitative and quantitative variables;
+proc sql;
+    * print frequency of each Species in sashelp.iris;
+    select
+         species
+        ,count(*) as Number_of_Irises
+    from
+        sashelp.iris
+    group by
+        Species
+    ;
+    * print median of SepalLength by Species in sashelp.iris;
+    select
+         Species
+        ,min(SepalLength) as Minimum_Sepal_Length
+        ,median(SepalLength) as Median_Sepal_Length
+        ,max(SepalLength) as Maximum_Sepal_Length
+    from
+        sashelp.iris
+    group by
+        Species
+    ;
+quit;
+
+
+*******************************************************************************;
+* print-to-log-with-macro-variables ;
+*******************************************************************************;
+
+*Example;
+%let recipeName = print-to-log-with-macro-variables;
+%put This is an example of the recipe &recipeName.;
+%put This is an example of &=recipeName.;
+%put _user_;
+
 
 
 
