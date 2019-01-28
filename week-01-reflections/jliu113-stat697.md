@@ -37,6 +37,12 @@
 * Question (jliu113-stat697): What is the five achievement?
 - Answer (jliu113-stat697): Building General Knowledge achievement, team-based problem solving achievement, reading for depth achievement, intial setup achievement, reading for breath achievement.
 
+[hello-world Week 1 SAS Recipe]
+* Question (jliu113-stat697): What's the -null- represent?
+
+
+[fizz-buzz Week 1 SAS Recipe]
+* Question jliu113-stat697): What's the "if else code" means?
 
 
 ***
