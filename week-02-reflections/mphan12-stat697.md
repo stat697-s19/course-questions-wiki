@@ -54,18 +54,23 @@
 - Answer (mphan12-stat697): A HAVING clause works with the GROUP BY clause to restrict the groups that are displayed in the output, based on one or more specified conditions
 
 
+
 [Chapter 2, Problem 10]
 - Question (mphan12-stat697): If you want to use HAVING clause, must you also have GROUP BY clause?
 - Answer (mphan12-stat697): Yes.
 
 
+
 [Summarize Data Using SQL Week 2 SAS Recipe]
-- Question (mphan12-stat697): 
+- Question (mphan12-stat697): What are the manadatory clauses required in PROC SQL?
+- Answer (mphan12-stat697): The SELECT and FROM clauses are mandatory.
 
 
 
 [Print To Log with Macro Variables Week 2 SAS Recipe]
-- Question (mphan12-stat697): 
+- Question (mphan12-stat697): What does &=recipeName do in SAS Macro?
+- Answer (mphan12-stat697): The macro variable "recipeName" is dereferenced using an ampersand (&)
+together with an equal sign (=), which causes the name of the macro variable to also be printed to the log instead of the value.
 
 
 
