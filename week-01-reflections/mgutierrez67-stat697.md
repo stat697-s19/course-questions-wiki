@@ -16,6 +16,10 @@
 * Question (mgutierrez67-stat697): Why are we submitting our reflections as a Markdown file? What is a Markdown file?
 - Answer (mgutierrez67-stat697): GitHub uses Markdown files to show the contents of the repo if a Readme.md file is included. Markdown files are text files that can be converted into many output formats.
 
+[Course Structure Quiz, Problem 4]
+* Question (mgutierrez67-stat697): Would it be helpful and/or recommended for groups to conduct code reviews of each other's work live similar to the code review sessions with the professor?
+- Answer (mgutierrez67-stat697): I think there is value in conducting code reviews together and live compared to just writing notes or messages with our remarks. Live code reviews gives the group an opportunity for more open discussions and collaboration.
+
 [Course Structure Quiz, Problem 5]
 * Question (mgutierrez67-stat697): Can a student pass this class without completing the final/Building General Knowledge accomplishment? For example, can a student skip the final if they have already accomplished the 4 other competencies?
 
@@ -25,7 +29,10 @@
 
 [hello-world Week 1 SAS Recipe]
 * Question (mgutierrez67-stat697): When should the put statement be used?
-- Answer (mgutierrez67-stat697): One use of the put statement is to examine a dataset's attributes or variables. 
+- Answer (mgutierrez67-stat697): One use of the put statement is to examine a dataset's attributes or variables.
+
+[fizz-buzz Week 1 SAS Recipe]
+* Question (mgutierrez67-stat697): What are some real world scenarios that the mod function would be needed in a larger project or program (outside of just needing to know the remainder value)?
 
 ***
 
