@@ -5,37 +5,35 @@
 
 [Course Structure Quiz, Problem 1]
 * Question (jliu113-stat697): How could students get the access for the final exam? 
-- Answer (jliu113-stat697): Direct message the instructor in Slack for the access password anytime after 11:59 PM on Saturday, 09MAR2019
+
 
 
 [Course Structure Quiz, Problem 2]
 * Question (jliu113-stat697): There will tentatively be __ Weekly project steps, including a code review, with __ of __steps needing to be compelted to earn the __ achievement in the course.
-- Answer (jliu113-stat697): 8, 8, 8, problem solving
+
 
 
 [Course Structure Quiz, Problem 3]
 * Question (jliu113-stat697): How many question would be on the final exam? And how much time will the final exam last?
-- Answer (jliu113-stat697): 65 multiple choice questions, and 110 minutes. 
+
 
 
 [Course Structure Quiz, Problem 4]
 * Question (jliu113-stat697): There will tentatively be __ Weekly reflection, including a code review, with __ of __ steps needing be compelted to earn the __ achievement in the course.
-- Answer (jliu113-stat697):7, 6, 7, reading for depth
+
 
 
 [Course Structure Quiz, Problem 5]
 * Question (jliu113-stat697): How could students get A?
-- Answer (jliu113-stat697): The grades willl be dtermined by the number of course achievements earned in additon to the team-based  problems solving achievement.
-
 
 
 [Course Structure Quiz, Problem 6]
 * Question (jliu113-stat697): How could students earn the avhivment of final exam?
-- Answer (jliu113-stat697): Student must earn 70% of the questions in final exam.
+
 
 [Course Structure Quiz, Problem 7]
 * Question (jliu113-stat697): What is the five achievement?
-- Answer (jliu113-stat697): Building General Knowledge achievement, team-based problem solving achievement, reading for depth achievement, intial setup achievement, reading for breath achievement.
+
 
 [hello-world Week 1 SAS Recipe]
 * Question (jliu113-stat697): What's the -null- represent?
