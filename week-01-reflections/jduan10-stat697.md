@@ -33,6 +33,16 @@
 
 
 
+[Course Structure Quiz, Problem 7]
+* Question (jduan10-stat697): Can we choose our project teammate?
+
+
+
+[hello-orld Week 1 SAS Recipe]
+* Question (jduan10-stat697):  What is the function of put statement?
+
+
+
 [fizz-buzz Week 1 SAS Recipe]
 * Question (jduan10-stat697): Can we use do loop within another do loop?
 
