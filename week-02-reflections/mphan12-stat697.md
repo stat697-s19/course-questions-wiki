@@ -32,6 +32,7 @@
 - Answer (mphan12-stat697): The GROUP BY clause is changed to an ORDER BY clause.
 
 
+
 [Chapter 2, Problem 1]
 - Question (mphan12-stat697): In PROC SQL, how do you remove duplicate records?
 - Answer (mphan12-stat697): select distinct column_A, column_B, ....
