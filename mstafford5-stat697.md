@@ -1,3 +1,6 @@
+
+# Questions about Problems and Recipes
+
 # course-questions-wiki
 
 [Course Structure Quiz, Problem 1]
@@ -28,24 +31,35 @@
 [fizz-buzz Week 1 SAS Recipe]
 * Question (mstafford5-stat697): Why is the line: "else put i=;" not giving a value for i explicitly?
 
+
+
+
+***
+
+
+
 # Recipes Exploration Results
-*here the code 
-data _null_;
-    put "Hello, STAT 697! This is Megan Stafford";
-run;
-
-data _null_;
-    do i = 1 to 100;
-        if mod(i,3) = 0 then put "Megan ";
-        else if mod(i, 5) = 0 then put "Stafford";
-        else put i=;
-    end;
-run;
-
-```
-
 
 
 
 ```
 
+
+data _null_;
+put 'Hello, World!';
+run;
+*put statement will not work with values not in quotes or if you add a variable that's assigned to a string;
+***Hello World***;
+
+data _null_;
+do i = 1 to 100;
+if mod(i, 3) = 3 then put'Fizz';*modified this statement;
+else if mod(i,5) = 0 then put 'Buzz';
+else put i=;
+end;
+run;
+*when the mod statement has a value equal to greater than the second argument, then it will not make any changes to the output;
+***Fizz-Buzz***
+
+
+```
