@@ -4,30 +4,30 @@
 
 
 [Course Structure Quiz, Problem 1]
-* Question (dzhou11-stat697):What is the form and content of our final exam?
+* Question (dzhou11-stat697):What is the form and content of our final exam ?
 - Answer (dzhou-stat697): 
 
 [Course Structure Quiz, Problem 2]
-* Question (dzhou11-stat697): When can we do more SAS exercises? 
+* Question (dzhou11-stat697): When can we do more SAS exercises ? 
 - Answer (dzhou-stat697):
 [Course Structure Quiz, Problem 3] 
-* Question (dzhou11-stat697): What is the specific form of extra credit?
+* Question (dzhou11-stat697): What is the specific form of extra credit ?
 - Answer (dzhou-stat697):
 
 [Course Structure Quiz, Problem 4] 
-* Question (dzhou11-stat697):Can we use more blackboard to submit assighments? 
+* Question (dzhou11-stat697):Can we use more blackboard to submit assighments ? 
 - Answer (dzhou-stat697): 
 
 [Course Structure Quiz, Problem 5]
- * Question (dzhou11-stat697): Is there a limit in resubmitting incomplete assignments by a student?
+ * Question (dzhou11-stat697): Is there a limit in resubmitting incomplete assignments by a student ?
 - Answer (dzhou-stat697):
 
 [Course Structure Quiz, Problem 6] 
-* Question (dzhou11-stat697): Can a week's assighment be combined?
+* Question (dzhou11-stat697): Can a week's assighment be combined ?
 - Answer (dzhou-stat697): .
 
 [Course Structure Quiz, Problem 7]
-* Question (dzhou11-stat697):  what is SQL? What is its application?
+* Question (dzhou11-stat697):  what is SQL? What is its application ?
 - Answer (dzhou-stat697): 
 
 
