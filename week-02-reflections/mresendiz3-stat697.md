@@ -128,7 +128,26 @@ select
     ;
 quit;
 
+*******************************************************************************;
+* print-to-log-with-macro-variables ;
+*******************************************************************************;
+/*
+Scenario: We wish to print information to the log without using a null data step
 
+Approach: Use the macro command %put
+
+Recipe:
+%put <text to print to log>;
+
+*/
+
+*Example;
+%let recipeName = print-to-log-with-macro-variables;
+%put This is an example of the recipe &recipeName.;
+%put This is an example of &=recipeName.;
+%put _user_;
+
+/*
 ```
 
 
