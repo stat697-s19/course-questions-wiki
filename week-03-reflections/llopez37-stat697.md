@@ -39,9 +39,27 @@
 
 
 ```
+options mprint;
+%macro splitDatasetAndPrintMeans;
+    %let species1 = Setosa;
+    %let species2 = Versicolor;
+    %let species3 = Virginica;
+    %put _user_;
+    %put;
 
+    %do i = 1 %to 3;
+        %let currentSpecies = &&species&i.;
+        %put &=currentSpecies.;
+        data iris_&currentSpecies.;
+            set sashelp.iris;
+            if species = "&currentSpecies.";
+        run;
+        proc means n nmiss min q1 median q3 max maxdec=1;
+        run;
+    %end;
+%mend;
+%splitDatasetAndPrintMeans
 
-[place your recipes exploration here, and delete this line]
 
 
 
