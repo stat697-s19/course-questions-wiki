@@ -3,7 +3,6 @@
 
 
 
-
 [Chapter 3, Problem 4]
 - Question (mphan12-stat697): What is the difference on inner join a.id = b.id and from a,b where a.id = b.id?
 
