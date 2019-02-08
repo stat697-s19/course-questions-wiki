@@ -3,16 +3,6 @@
 
 
 
-[place your questions/answers here, and delete this line]
-
-
-
-***
-
-
-
-
-
 [Course Structure Quiz, Problem 1]
  * Question dzhou11-stat697): What is the difference from inner join and outer join? the inner join can appear all of the data, Why use the outer join?
 
@@ -50,6 +40,14 @@
 
  [basic-dry-programming-pattern Week 3 SAS Recipe]
 * Question (dzhou11-stat697): How to express q1, median, Q3 with a graph? It feels that the numbers don't look very intuitive.
+
+
+
+
+
+***
+
+
 
 
 
