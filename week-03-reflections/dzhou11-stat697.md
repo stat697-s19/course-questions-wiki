@@ -1,8 +1,5 @@
 
 # Questions about Problems and Recipes
-
-
-
 [Course Structure Quiz, Problem 1]
  * Question dzhou11-stat697): What is the difference from inner join and outer join? the inner join can appear all of the data, Why use the outer join?
 
@@ -48,7 +45,7 @@
 ***
 
 
-
+# Recipes Exploration Results
 
 
 
