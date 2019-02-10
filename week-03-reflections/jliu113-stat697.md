@@ -1,5 +1,7 @@
 
 # Questions about Problems and Recipes
+
+
 [Course Structure Quiz, Problem 1]
 * Question (jliu113-stat697): Does “PROC SQL” perform a join without a condition? Does it require the two columns with the same name?
 - Answer (jliu113-stat697): No, it won’t perform a join(eg: where, =) unless the columns that are compared in the join condition have the same data type. However, the two columns are not required to have the same name.
@@ -15,10 +17,10 @@
 - Answer (jliu113-stat697): Use “SELECT” statement only select several columns we need.
 
 
-
 [Course Structure Quiz, Problem 4]
 * Question (jliu113-stat697): When using SELECT to join table, how to rename a column by using column alias?
 - Answer (jliu113-stat697): Use “SELECT” statement and “AS” to change it, eg: select one.x as ID, two.x, a, b, from sasuser.staffmaster as s.
+
 
 [Course Structure Quiz, Problem 5]
 * Question (jliu113-stat697): Which are two situation that require Table aliases use?
@@ -31,12 +33,10 @@ from airline.flightdelays as af,
 where af.delay > wf.delay
 
 
-
 [Course Structure Quiz, Problem 6]
 * Question (jliu113-stat697): How could students get the full name(first initial and last name) from separate first name and last name columns? And age from date birth?
 - Answer (jliu113-stat697): substr(firstname,1,1)  || `.` || lastname as Name, int((today()
 - dateofbirth)/365.25 as Age
-
 
 
 [Course Structure Quiz, Problem 7]
@@ -59,11 +59,9 @@ Eg, select coalesce(three.x, four.x)
 - Answer (jliu113-stat697): 1) The complexity of the code is usually reduced, ao that the code is easier to write, and understand. 2) In some cases, PROC SQL might be able to process the code more efficiently.
 
 
-
 [Course Structure Quiz, Problem 10]
 * Question (jliu113-stat697): What is the two types of macro variables?
 - Answer (jliu113-stat697): 1)automatic macro variables, which are provided by SAS; 2)user-defined macro variables, whose values you create and define.
-
 
 
 [Course Structure Quiz, Problem 11]
@@ -76,20 +74,14 @@ Eg, select coalesce(three.x, four.x)
 - Answer (jliu113-stat697): 1)%STR:(; + - * / , < > = blank ^ ~ # | LT EQ GT AND OR NOT LE GE NE IN); 2)%NRSTR; 3)%BQUOTE:(' " ( ) + - * / < > = ¬ ^ ~ ; , # blank AND  OR  NOT  EQ  NE  LE  LT  GE  GT  IN).
 
 
-
-
 [Course Structure Quiz, Problem 13]
 * Question (jliu113-stat697): What is the Macro Character Functions?
 - Answer (jliu113-stat697): 1)%UPCASE; 2)%QUPCASE; 3) %SUBSTR; 4)%QSUBSTR; 5) %INDEX; 6) %SCAN; 7) %QSCAN.
 
 
-
-
 [reference-basic-dry-programming-pattern Week 3 SAS Recipe]
 * Question (jliu113-stat697): How do you understand of the Forward Rescan Rule ? Explain it with the example.
-- Answer (jliu113-stat697):  E.g., if "i" has value 2, then &&species&i. -> &species2 -> Versicolor by the Forward RescanRule; in the first iteration, && -> & and &i. -> 2; then &species2 just
-dereferences the macro variable "species2" created earlier.
-
+- Answer (jliu113-stat697):  E.g., if "i" has value 2, then &&species&i. -> &species2 -> Versicolor by the Forward RescanRule; in the first iteration, && -> & and &i. -> 2; then &species2 just dereferences the macro variable "species2" created earlier.
 
 
 
