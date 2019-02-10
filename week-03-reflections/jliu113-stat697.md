@@ -2,9 +2,11 @@
 # Questions about Problems and Recipes
 
 
+
 [Course Structure Quiz, Problem 1]
 * Question (jliu113-stat697): Does “PROC SQL” perform a join without a condition? Does it require the two columns with the same name?
 - Answer (jliu113-stat697): No, it won’t perform a join(eg: where, =) unless the columns that are compared in the join condition have the same data type. However, the two columns are not required to have the same name.
+
 
 
 [Course Structure Quiz, Problem 2]
@@ -12,9 +14,11 @@
 - Answer (jliu113-stat697): Two ways, the first one is to eliminate or rename the duplicate columns; the other one is to use the “COALESCE” function.
 
 
+
 [Course Structure Quiz, Problem 3]
 * Question (jliu113-stat697):When using SELECT to join table, how to eliminate duplicate columns?
 - Answer (jliu113-stat697): Use “SELECT” statement only select several columns we need.
+
 
 
 [Course Structure Quiz, Problem 4]
@@ -22,31 +26,23 @@
 - Answer (jliu113-stat697): Use “SELECT” statement and “AS” to change it, eg: select one.x as ID, two.x, a, b, from sasuser.staffmaster as s.
 
 
+
 [Course Structure Quiz, Problem 5]
 * Question (jliu113-stat697): Which are two situation that require Table aliases use?
 - Answer (jliu113-stat697): 1) a table is joined to itself ( called a self-join or reflexive join); 2) need to reference columns from same-name tables in different libraries.
-Eg, from airline.staffmaster as s1,
-                    airline.staffmaster as s2
 
-from airline.flightdelays as af,       
-           work.flightdelays as wf
-where af.delay > wf.delay
 
 
 [Course Structure Quiz, Problem 6]
 * Question (jliu113-stat697): How could students get the full name(first initial and last name) from separate first name and last name columns? And age from date birth?
-- Answer (jliu113-stat697): substr(firstname,1,1)  || `.` || lastname as Name, int((today()
-- dateofbirth)/365.25 as Age
+- Answer (jliu113-stat697): substr(firstname,1,1)  || `.` || lastname as Name, int((today()- dateofbirth)/365.25 as Age
+
 
 
 [Course Structure Quiz, Problem 7]
 * Question (jliu113-stat697): What is the difference between DATA step match-merge and PROC SQL?
 - Answer (jliu113-stat697):  1) a join does not require that you sort the data first; a DATA step match-merge requires that the data be sorted; 2) The DATA step match-merge creates a data set whereas the PROC SQL inner join creates only a report as output; 3) a PROC SQL outer join does not overlay the two common columns by default. But we could add COALESCE into SELECT function to solve the issue.
-Eg, select coalesce(three.x, four.x)       
-       as X, a, b      
-      from three       
-      full join       
-      four
+
 
 
 [Course Structure Quiz, Problem 8]
@@ -54,9 +50,11 @@ Eg, select coalesce(three.x, four.x)
 - Answer (jliu113-stat697):  PROC SQL joins do not require sorted or indexed tables, that the columns in join expressions have the same name. PROC SQL can use comparison operators other than the equal sign(=).
 
 
+
 [Course Structure Quiz, Problem 9]
 * Question (jliu113-stat697): What is the advantages to using an in-line view instead of a table in PROC SQL query?
-- Answer (jliu113-stat697): 1) The complexity of the code is usually reduced, ao that the code is easier to write, and understand. 2) In some cases, PROC SQL might be able to process the code more efficiently.
+- Answer (jliu113-stat697): 1) The complexity of the code is usually reduced, ao that the code is easier to write, and understand. 2)    In some cases, PROC SQL might be able to process the code more efficiently.
+
 
 
 [Course Structure Quiz, Problem 10]
@@ -64,19 +62,23 @@ Eg, select coalesce(three.x, four.x)
 - Answer (jliu113-stat697): 1)automatic macro variables, which are provided by SAS; 2)user-defined macro variables, whose values you create and define.
 
 
+
 [Course Structure Quiz, Problem 11]
 * Question (jliu113-stat697): What is the rules of %LET statement?
 - Answer (jliu113-stat697): 1)All values are stored as character strings; 2)Mathematical expressions are not evaluated; 3)The case of the value is preserved; 4) Quotation marks that enclose literals are stored as part of the value;5) Leading and trailing blanks are removed from the value before the assignment is made.
 
 
+
 [Course Structure Quiz, Problem 12]
 * Question (jliu113-stat697): What is Macro Quoting Functions?
-- Answer (jliu113-stat697): 1)%STR:(; + - * / , < > = blank ^ ~ # | LT EQ GT AND OR NOT LE GE NE IN); 2)%NRSTR; 3)%BQUOTE:(' " ( ) + - * / < > = ¬ ^ ~ ; , # blank AND  OR  NOT  EQ  NE  LE  LT  GE  GT  IN).
+- Answer (jliu113-stat697): 1)%STR:(; + - * / , < > = blank ^ ~ # | LT EQ GT AND OR NOT LE GE NE IN); 2)%NRSTR; 3)%BQUOTE.
+
 
 
 [Course Structure Quiz, Problem 13]
 * Question (jliu113-stat697): What is the Macro Character Functions?
 - Answer (jliu113-stat697): 1)%UPCASE; 2)%QUPCASE; 3) %SUBSTR; 4)%QSUBSTR; 5) %INDEX; 6) %SCAN; 7) %QSCAN.
+
 
 
 [reference-basic-dry-programming-pattern Week 3 SAS Recipe]
