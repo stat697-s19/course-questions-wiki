@@ -3,37 +3,37 @@
 
 
 
-[Course Structure Quiz, Problem 1]
+[Course Textbook Chapter 3, Problem 4]
 * Question (yli110-stat697): What are the two valid formats to write PROC SQL inner join?
 
 
 
-[Course Structure Quiz, Problem 2]
+[Course Textbook Chapter 3, Problem 6]
 * Question (yli110-stat697): What are the requirements of tables when you want to inner join rows from two tables?
 
 
 
-[Course Structure Quiz, Problem 3]
+[Course Textbook Chapter 3, Problem 8]
 * Question (yli110-stat697): What are the main difference between DATA MERGE BY and PROC SQL full join? How can you make these two to give same output?
 
 
 
-[Course Structure Quiz, Problem 4]
+[Course Textbook Chapter 3, Problem 10]
 * Question (yli110-stat697): What are the necessary conditions to use table aliases?
 
 
 
-[Course Structure Quiz, Problem 5]
+[Course Textbook Chapter 9, Problem 1]
 * Question (yli110-stat697): How do you reference a macro variable in the TITLE statement?
 
 
 
-[Course Structure Quiz, Problem 6]
+[Course Textbook Chapter 9, Problem 2]
 * Question (yli110-stat697): What will happen if you have double quotation masks in the %LET statement?
 
 
 
-[Course Structure Quiz, Problem 7]
+[Course Textbook Chapter 9, Problem 3]
 * Question (yli110-stat697): What are the four types of tokens recognized by SAS word scanner?
 - Answer (yli110-stat697): literals, names, numbers and special characters.
 
