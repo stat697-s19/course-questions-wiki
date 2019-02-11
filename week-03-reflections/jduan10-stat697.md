@@ -37,6 +37,11 @@
 
 
 
+[Week 3 SAS Recipe: basic-dry-programming-pattern] 
+- Question (jduan10-stat697): What is the difference between “&&” and “&” sign?
+
+
+
 
 ***
 
@@ -49,8 +54,28 @@
 ```
 
 
-[place your recipes exploration here, and delete this line]
+*Recipe: basic-dry-programming-pattern;
 
+options mprint;
+%macro splitDatasetAndPrintMeans;
+    %let species1 = Setosa;
+    %let species2 = Versicolor;
+    %let species3 = Virginica;
+    %put _user_;
+    %put;
+
+    %do i = 1 %to 3;
+        %let currentSpecies = &&species&i.;
+        %put &=currentSpecies.;
+        data iris_&currentSpecies.;
+            set sashelp.iris;
+            if species = "&currentSpecies.";
+        run;
+        proc means n nmiss min q1 median q3 max maxdec=1;
+        run;
+    %end;
+%mend;
+%splitDatasetAndPrintMeans
 
 
 ```
