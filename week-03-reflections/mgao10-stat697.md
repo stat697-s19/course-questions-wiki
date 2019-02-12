@@ -3,37 +3,37 @@
 
 
 
-[Course Structure Quiz, Problem 1]
+[Week3 Reflection - TB Ch3, Problem 1]
 * Question (mgao10-stat697): How is the from and where works
 
 
 
-[Course Structure Quiz, Problem 2]
+[Week3 Reflection - TB Ch3, Problem 2]
 * Question (mgao10-stat697): what is the difference between inner join and outer join
 
 
 
-[Course Structure Quiz, Problem 3]
+[Week3 Reflection - TB Ch3, Problem 3]
 * Question (mgao10-stat697): how to merge and sort at the same time
 
 
 
-[Course Structure Quiz, Problem 4]
+[Week3 Reflection - TB Ch9, Problem 4]
 * Question (mgao10-stat697): what is %LET statment means
 
 
 
-[Course Structure Quiz, Problem 5]
+[Week3 Reflection - TB Ch9, Problem 5]
 * Question (mgao10-stat697): what is symput?
 
 
 
-[Course Structure Quiz, Problem 6]
+[Week3 Reflection - TB Ch10, Problem 6]
 * Question (mgao10-stat697): What is macro variable?
 
 
 
-[Course Structure Quiz, Problem 7]
+[Week3 Reflection - TB Ch10, Problem 7]
 * Question (mgao10-stat697): what is &&teach&crs?
 
 
