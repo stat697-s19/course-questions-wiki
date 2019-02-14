@@ -98,5 +98,5 @@ options
 )
 
 
-* three proc means step, one for each dataset;
+* three proc means steps, one for each dataset;
 * begin with three global system options;
