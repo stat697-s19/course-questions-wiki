@@ -3,37 +3,37 @@
 
 
 
-[Course Structure Quiz, Problem 1]
+[Chapter 3, Question 4]
 * Question (mstafford5-stat697): What would happen to null values on the 'ON' statement? Would they be ignored or joined together in the join statement?
 
 
 
-[Course Structure Quiz, Problem 2]
+[Chapter 3, Question 8]
 * Question (mstafford5-stat697): When are right joins not redundant to left joins? If the order is swapped, wouldn't they be equivalent?
 
 
 
-[Course Structure Quiz, Problem 3]
+[Chapter 9, Question 1]
 * Question (mstafford5-stat697): Is the SQL syntax the same in the SAS environment as other SQL environments such as mySQL?
 
 
 
-[Course Structure Quiz, Problem 4]
+[Chapter 9, Question 2]
 * Question (mstafford5-stat697): How are macro variables useful for data queries, besides updating to have current titles?
 
 
 
-[Course Structure Quiz, Problem 5]
+[Chapter 9, Question 4]
 * Question (mstafford5-stat697): Can macro values have conditions where they will change values?
 
 
 
-[Course Structure Quiz, Problem 6]
+[Chapter 9, Question 9]
 * Question (mstafford5-stat697): Which regular SAS functions can be replaced by macro functions? How would this change computatiuon time?
 
 
 
-[Course Structure Quiz, Problem 7]
+[Chapter 10, Question 10]
 * Question (mstafford5-stat697): Are macro %let symput, and other macros statements typically annotated? Or are they thought to be self-explanitory?
 
 
