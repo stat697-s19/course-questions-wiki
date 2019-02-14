@@ -48,7 +48,7 @@
 
 
 
-[dry programming Week 4 SAS Recipe]
+[Dry programming Week 4 SAS Recipe]
 * Question (jliu113-stat697): What is the  %eval function means?
 - Answer (jliu113-stat697):  Make the variable into numerical and suitable for the do loop.
 
@@ -60,7 +60,7 @@
 
 # Recipes Exploration Results
 
-* Recipe: dry programming ;
+* Recipe: Dry programming ;
 
 ```
 
