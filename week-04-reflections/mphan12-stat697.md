@@ -39,7 +39,7 @@
 
 
 
-[advanced-dry-programming-pattern Week 3 SAS Recipe]
+[advanced-dry-programming-pattern Week 4 SAS Recipe]
 - Question (mphan12-stat697): When is it ideal not to use the MPRINT statement?
 - Answer (mphan12-stat697): When there are passwords encrypted in a macro statement.
 
