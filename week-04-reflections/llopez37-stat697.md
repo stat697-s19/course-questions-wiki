@@ -26,7 +26,7 @@
 - Answer (llopez37-stat697) It appears to do a conversion of some sorts
 
 [Advanced Dry Week 3 SAS Recipe]
-- Question (llopez37-stat697): 
+- Question (llopez37-stat697): Are the macro do loops more efficient? 
 
 
 
@@ -40,9 +40,43 @@
 
 
 ```
+options
+    mcompilenote=all
+    mprint
+    symbolgen
+;
+%macro splitDatasetAndPrintMeans(
+    inputLibrary,
+    dsn,
+    column,
+    outputLibrary=Work
+);
+
+    %let callDate = %sysfunc(today(),weekdate.);
+
+    proc sql noprint;
+        select
+            distinct &column. into :iterationList separated by "|"
+            from &inputLibrary..&dsn.
+        ;
+    quit;
+
+    %let numberOfIterations = %sysfunc(countw(&iterationList.,|));
+
+    %do i = 1 %to %eval(&numberOfIterations.);
+        %let currentIteration = %scan(&iterationList.,&i.,|);
+        data &outputLibrary..&dsn._&currentIteration.;
+            set &inputLibrary..&dsn.;
+            if &column. = "&currentIteration.";
+        run;
+        footnote "Created on &callDate. using dataset &syslast.";
+        proc means n nmiss min q1 median q3 max maxdec=1;
+        run;
+    %end;
+%mend;
+%splitDatasetAndPrintMeans(sashelp, iris, species)
 
 
-[place your recipes exploration here, and delete this line]
 
 
 
