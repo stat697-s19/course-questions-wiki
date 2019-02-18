@@ -4,6 +4,7 @@
 [Chapter 3, Problem 4]
 * Question (mresendiz3-stat697): Can the inner join syntax compare across data types?
 * Answer: Use inner join with columns that have the same data type. The columns don't necessarily need to have the same name. 
+* Author attribution: SAS Institute Inc. 2014. SAS® Certification Prep Guide: Advanced Programming for SAS®9, Fourth Edition. Cary, NC: SAS Institute Inc.
 
 
 [Chapter 3, Problem 6]
