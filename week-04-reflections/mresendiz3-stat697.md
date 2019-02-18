@@ -4,39 +4,39 @@
 [Chapter 4, Problem 1]
 * Question (mresendiz3-stat697): Is there an order of precedence for set operators?
 * Answer: Yes. Keeping in mind that parenteses override other set operators INTERSECT is always evaluated first and OUTER UNION, UNION, and EXCEPT all have the same level of precedence. 
-
+* Author attribution: SAS Institute Inc. 2014. SAS® Certification Prep Guide: Advanced Programming for SAS®9, Fourth Edition. Cary, NC: SAS Institute Inc.
 
 [Chapter 4, Problem 2]
 * Question (mresendiz3-stat697): What does the ALL keyword do?
 * Answer: The ALL keyword makes one pass through the data and doesn't remove duplicate rows and cannot be used with OUTER UNION. 
-
+* Author attribution: SAS Institute Inc. 2014. SAS® Certification Prep Guide: Advanced Programming for SAS®9, Fourth Edition. Cary, NC: SAS Institute Inc.
 
 [Chapter 4, Problem 5]
 * Question (mresendiz3-stat697): What does the CORR (CORRESPONDING) keyword do?
 * Answer: The CORR keyword overlays columns by name (not position) and when used with EXCEPT, INTERSECT, or UNION it excludes columns with different names. When CORR is used with OUTER UNION it overlays columns with the same name and displays the columns with different names without overlaying. 
-
+* Author attribution: SAS Institute Inc. 2014. SAS® Certification Prep Guide: Advanced Programming for SAS®9, Fourth Edition. Cary, NC: SAS Institute Inc.
 
 [Chapter 11, Problem 1]
 * Question (mresendiz3-stat697): What type of macro is most efficient and why?
 * Answer: Macros come in 3 types: name style, statement style, and command style. Name style macros are more efficient because they always begin with a percent sign which directs the word scanner to pass the token to the macro processor. 
-
+* Author attribution: SAS Institute Inc. 2014. SAS® Certification Prep Guide: Advanced Programming for SAS®9, Fourth Edition. Cary, NC: SAS Institute Inc.
 
 [Chapter 11, Problem 3]
 * Question (mresendiz3-stat697): What if the macro definition has both the PARMBUFF option and a set of parameters?
 * Answer: The macro invocation causes the parameters to receive values and the entire invocation list of values to be assigned to SYSPBUFF. 
-
+* Author attribution: SAS Institute Inc. 2014. SAS® Certification Prep Guide: Advanced Programming for SAS®9, Fourth Edition. Cary, NC: SAS Institute Inc.
 
 [Chapter 11, Problem 5]
 * Question (mresendiz3-stat697): What is a the PARMBUFF option?
 * Answer: The PARMBUFF option can be used in a macro definition to create a macro that can accept different types of parameters at each invocation. It assigns the entire list of parameter values in a macro call including parentheses in the name-style invocation. 
-
+* Author attribution: SAS Institute Inc. 2014. SAS® Certification Prep Guide: Advanced Programming for SAS®9, Fourth Edition. Cary, NC: SAS Institute Inc.
 
 [Chapter 11, Problem 10]
 * Question (mresendiz3-stat697): What is the %GLOBAL statement?
 * Answer: The %GLOBAL statement creates one or more macro variables in the global symbol table while assigning null values to them, can be used either inside or outisde a macro definition, and it has no effect on variables that are already in the global symbol table. 
+* Author attribution: SAS Institute Inc. 2014. SAS® Certification Prep Guide: Advanced Programming for SAS®9, Fourth Edition. Cary, NC: SAS Institute Inc.
 
-
-[sas_recipe-basic-dry-programming-pattern Week 3 SAS Recipe]
+[sas_recipe-basic-dry-programming-pattern Week 4 SAS Recipe]
 * Question (mresendiz3-stat697): Is there anything being done to make macro scripts easier to understand?
 
 
