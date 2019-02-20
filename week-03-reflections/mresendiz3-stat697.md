@@ -3,13 +3,12 @@
 
 [Chapter 3, Problem 4]
 * Question (mresendiz3-stat697): Can the inner join syntax compare across data types?
-* Answer: Use inner join with columns that have the same data type. The columns don't necessarily need to have the same name. 
-* Author attribution: SAS Institute Inc. 2014. SAS® Certification Prep Guide: Advanced Programming for SAS®9, Fourth Edition. Cary, NC: SAS Institute Inc.
+* Answer (mresendiz3-stat697): Use inner join with columns that have the same data type. The columns don't necessarily need to have the same name. 
 
 
 [Chapter 3, Problem 6]
 * Question (mresendiz3-stat697): What is necessary for an inner join to be processed successfully?
-* Answer: An inner join needs to have a WHERE clause that has the same data type across columns and may have different numbers of columns and unsorted rows. 
+* Answer (mresendiz3-stat697): An inner join needs to have a WHERE clause that has the same data type across columns and may have different numbers of columns and unsorted rows. 
 
 
 [Chapter 3, Problem 8]
@@ -18,22 +17,22 @@
 
 [Chapter 9, Problem 1]
 * Question (mresendiz3-stat697): What types of macro variables are there and how can we reference them?
-* Answer: There are two types of macro variables: automatic and user-defined. They can be referenced and defined anywhere in a SAS program but cannot be referenced within data lines. 
+* Answer (mresendiz3-stat697): There are two types of macro variables: automatic and user-defined. They can be referenced and defined anywhere in a SAS program but cannot be referenced within data lines. 
 
 
 [Chapter 9, Problem 4]
 * Question (mresendiz3-stat697): What is necessary to define a macro variable?
-* Answer: The %LET statement is used to define a macro variable where quotation marks after the "=" sign is not needed unless the user wants to have them stored as part of the value. 
+* Answer (mresendiz3-stat697): The %LET statement is used to define a macro variable where quotation marks after the "=" sign is not needed unless the user wants to have them stored as part of the value. 
 
 
 [Chapter 10, Problem 1]
 * Question (mresendiz3-stat697): What is a SYMPUT routine?
-* Answer: The SYMPUT routine creates multiple macro variables within one DATA step without having to change a %LET statement and without having to resubmit the DATA step to assign a new value to our macro variables. We can update the same macro variable and create related macro variables all in one DATA step. 
+* Answer (mresendiz3-stat697): The SYMPUT routine creates multiple macro variables within one DATA step without having to change a %LET statement and without having to resubmit the DATA step to assign a new value to our macro variables. We can update the same macro variable and create related macro variables all in one DATA step. 
 
 
 [Chapter 10, Problem 7]
 * Question (mresendiz3-stat697): How do we create a macro variable during a PROC SQL step?
-* Answer: Use the INTO clause of the SELECT statement as such:  SELECT  data details; INTO: data_name;.
+* Answer (mresendiz3-stat697): Use the INTO clause of the SELECT statement as such:  SELECT  data details; INTO: data_name;.
 
 
 
