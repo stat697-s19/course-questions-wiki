@@ -1,6 +1,6 @@
 
 # Questions about Problems and Recipes
-
+ 
 [Chapter 4, Problem 1]
 * Question (mresendiz3-stat697): Is there an order of precedence for set operators?
 * Answer: Yes. Keeping in mind that parenteses override other set operators INTERSECT is always evaluated first and OUTER UNION, UNION, and EXCEPT all have the same level of precedence. 
