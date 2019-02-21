@@ -3,7 +3,6 @@
 
 
 
-
 [Chapter 2, Problem 5]
 - Question (mphan12-stat697): What is the difference between HAVING and WHERE?
 - Answer (mphan12-stat697): HAVING is a clause condition on a group calculated metric, while WHERE clause is on the individual rows. 
