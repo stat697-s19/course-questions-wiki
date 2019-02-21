@@ -39,8 +39,29 @@
 
 
 ```
-
-
-[insert code here]
+proc sql number;
+    select
+         coalesce(A.statename, B.statename) as statename
+        ,A.region
+        ,A.division
+        ,B.number_of_zipcodes
+    from
+        sashelp.us_data as A
+        full join
+        (
+            select
+                 statename
+                ,count(*) as number_of_zipcodes format comma12.
+            from
+                sashelp.zipcode
+            group by
+                statename
+        ) as B
+        on
+            A.statename = B.statename
+    order by
+        number_of_zipcodes desc
+    ;
+quit;
 
 ```
