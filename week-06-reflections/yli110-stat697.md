@@ -43,6 +43,16 @@
 
 
 
+[weekly-Recipe-obtain-column-information]
+* Question (yli110-stat697): How do you delimit data in excel?
+
+
+
+[weekly-Recipe-ddl-dml]
+* Question (yli110-stat697): What are the eight common queries in the ddl and dml?
+
+
+
 ***
 
 
@@ -54,17 +64,8 @@
 ```
 
 
-[place your recipes exploration here, and delete this line]
-
-
-
-```
-
-
-
 /*
 Recipe for Approach 1:
-
 - Open the SAS Explorer
 - Click "Toggle Details" icon in menu bar
 - Navigate to dataset
@@ -105,15 +106,12 @@ proc sql;
 quit;
 
 
-
-
-
 *Example For Approach 3;
 
 proc sql;
 	select
 		name
-	from 
+	from
 		dictionary.columns /*dictionary can only be accessed by PROC SQL*/
 	where
 		libname = 'SASHELP'
@@ -131,14 +129,9 @@ proc sql;
 	);
 quit;
 
-* DDL example: obtain column information;
-
 proc sql;
 	describe table work.temp;
 quit;
-
-
-* DDL example: add column;
 
 proc sql;
 	alter table work.temp
@@ -146,16 +139,11 @@ proc sql;
 	;
 quit;
 
-* DDL example: modify column;
-
 proc sql;
 	alter table work.temp
 		modify column1 char(54)
 	;
 quit;
-
-
-* DDL example: delete column;
 
 proc sql;
 	alter table work.temp
@@ -163,15 +151,9 @@ proc sql;
 	;
 quit;
 
-
-* DDL example: delete table;
-
 proc sql;
 	drop table work.temp;
 quit;
-
-
-* DML example setup: define column information;
 
 proc sql;
 	create table work.iris
@@ -179,26 +161,17 @@ proc sql;
 	;
 quit;
 
-
-* DML example: obtain rows of data;
-
 proc sql;
 	select *
 		from work.iris
 	;
 quit; /*no rows, only coped the columns*/
 
-
-* DML example: create rows of data from select query;
-
 proc sql;
 	insert into work.iris
 		select * from sashelp.iris
 	;
 quit;
-
-
-* DML example: create row of data using values statement for all columns;
 
 proc sql;
 	insert into work.iris
@@ -208,18 +181,12 @@ proc sql;
 	;
 quit;
 
-
-* DML example: create row of data using values statement for select columns;
-
 proc sql;
 	insert into work.iris
 		(Species, SepalLength)
 		values ('Big flower', 75)
 	;
 quit;
-
-
-* DML example: update rows of data;
 
 proc sql;
 	update work.iris
@@ -229,12 +196,11 @@ proc sql;
 	;
 quit;
 
-
-* DML example: delete rows of data;
-
 proc sql;
 	delete from work.iris
 		where Species = 'Big Flower'
 	;
 quit;
 
+
+```
