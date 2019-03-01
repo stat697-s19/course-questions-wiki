@@ -45,8 +45,124 @@
 ```
 
 
-[place your recipes exploration here, and delete this line]
+
+proc sql;
+    create table Work.tmp
+    (
+         column1 char(42)
+        ,column2 num
+    );
+quit;
+
+proc sql;
+    describe table Work.tmp;
+quit;
+
+proc sql;
+    alter table Work.tmp
+        add column3 char(42)
+    ;
+quit;
+
+
+proc sql;
+    alter table Work.tmp
+        modify column1 char(54)
+    ;
+quit;
+
+
+proc sql;
+    alter table Work.tmp
+        drop column2
+    ;
+quit;
+
+proc sql;
+    drop table Work.tmp;
+quit;
+
+proc sql;
+    create table Work.iris
+        like sashelp.iris
+    ;
+quit;
+
+proc sql;
+    select * from Work.iris;
+quit;
+
+proc sql;
+    insert into Work.iris
+        select * from sashelp.iris
+    ;
+quit;
+
+proc sql;
+    insert into Work.iris
+        values('Big Flower',75,80,85,90)
+    ;
+quit;
+
+proc sql;
+    insert into Work.iris
+        (Species,SepalLength)
+        values('Big Flower',75)
+    ;
+quit;
+
+proc sql;
+    update Work.iris
+        set Species='Big Flower'
+        where SepalLength > 64
+    ;
+quit;
+
+proc sql;
+    delete from Work.iris
+        where Species='Big Flower'
+    ;
+quit;
+
+
+proc sql;
+    select
+        <list of columns obtained by copying/pasting>
+    from
+        sashelp.iris
+    ;
+quit;
 
 
 
+proc contents order=varnum data=sashelp.iris;
+run;
+proc sql;
+    select
+        <list of columns obtained by copying/pasting>
+    from
+        sashelp.iris
+    ;
+quit;
+
+
+
+proc sql;
+    select
+        name
+    from
+        dictionary.columns
+    where
+        lowcase(libname) = 'sashelp'
+    and
+        lowcase(memname) = 'iris'
+    ;
+quit;
+proc sql;
+    select
+        <list of columns obtained by copying/pasting>
+    from
+        sashelp.iris
+    ;
+quit;
 ```
