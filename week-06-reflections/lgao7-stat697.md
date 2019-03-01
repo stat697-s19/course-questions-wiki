@@ -17,6 +17,7 @@
 * Question (lgao7-stat697):  What does the option BUFSIZE=OPTION do?
 
 
+
 [Week6 Reflection - TB Ch5,  Question 4]
 * Question (lgao7-stat697):  How to insert user-defined rows to a table in PROC SQL?
 
