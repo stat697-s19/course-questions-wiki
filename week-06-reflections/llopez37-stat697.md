@@ -28,11 +28,11 @@
 - Answer (llopez37-stat697) it seems when it is created a loh message appears defining it.
 
 [DDL and DML Week 6 SAS Recipe]
-- Question (llopez37-stat697): 
+- Question (llopez37-stat697): What is the preference between ddl and dml?
 
 
 [Column EditingWeek 6 SAS Recipe]
-- Question (llopez37-stat697): 
+- Question (llopez37-stat697): what is best approach from the 3 methods?
 
 ***
 
@@ -127,7 +127,11 @@ quit;
 
 proc sql;
     select
-        <list of columns obtained by copying/pasting>
+         Species
+        ,SepalLength
+        ,SepalWidth
+        ,PetalLength
+        ,PetalWidth
     from
         sashelp.iris
     ;
@@ -139,12 +143,18 @@ proc contents order=varnum data=sashelp.iris;
 run;
 proc sql;
     select
-        <list of columns obtained by copying/pasting>
+        Species
+        ,SepalLength
+        ,SepalWidth
+        ,PetalLength
+        ,PetalWidth
     from
         sashelp.iris
     ;
 quit;
 
+proc contents order = varnum data=sashelp.iris;
+run;
 
 
 proc sql;
@@ -160,7 +170,11 @@ proc sql;
 quit;
 proc sql;
     select
-        <list of columns obtained by copying/pasting>
+          Species
+        ,SepalLength
+        ,SepalWidth
+        ,PetalLength
+        ,PetalWidth
     from
         sashelp.iris
     ;
