@@ -40,6 +40,8 @@
 [obtain-column-information Week 6 SAS Recipe]
 * Question (mgao10-stat697): how to use wildcard to extrac information from the columns
 
+
+
 [ddl-and-dml-sql-queries Week 6 SAS Recipe]
 * Question (mgao10-stat697): what is the major difference between ddl and dml sql queries
 
