@@ -17,10 +17,54 @@
 
 ***
 
+proc report data=sashelp.iris(obs=3);
+run;
 
+ods exclude all;
+proc report data=sashelp.iris out=Work.iris(drop=_BREAK_);
+    define
+        SepalLength / order;
+run;
+ods exclude none;
 
-# Recipes Exploration Results
+proc report data=sashelp.iris;
+    columns
+        Species
+        N
+    ;
+    define Species / group;
+    define N / "Number of Irises";
+run;
 
+proc report data=sashelp.iris;
+    columns
+        Species
+        SepalLength = SepalLength_Min
+        SepalLength = SepalLength_Median
+        SepalLength = SepalLength_Max
+    ;
+    define Species / group;
+    define SepalLength_Min / min "Minimum Sepal Length";
+    define SepalLength_Median / median "Median Sepal Length";
+    define SepalLength_Max / max "Maximum Sepal Length";
+run;
+
+proc report data=sashelp.iris;
+    columns
+        SepalLength
+        Species
+        Total
+    ;
+    define SepalLength  / group;
+    define Species/ across;
+    define Total / computed;
+
+    compute Total;
+        Total = sum(_c2_, _c3_, _c4_);
+    endcomp;
+        
+    rbreak after / summarize;
+run;
 
 
 ```
